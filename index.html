@@ -141,76 +141,6 @@
         }
 
         /* LIFE NODE CARDS */
-        .node-grid {
-            display: grid;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .node-card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-left: 4px solid #00ffcc;
-            padding: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .node-card:active {
-            transform: scale(0.98);
-            background: #222;
-        }
-
-        .node-card.security { border-left-color: #00ffcc; }
-        .node-card.speed { border-left-color: #ff6b00; }
-        .node-card.entertainment { border-left-color: #ff00ff; }
-        .node-card.family { border-left-color: #00ff9f; }
-        .node-card.datenight { border-left-color: #ff1493; }
-
-        .node-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .node-title {
-            font-size: 16px;
-            font-weight: bold;
-            color: #00ffcc;
-            margin-bottom: 8px;
-            letter-spacing: 2px;
-        }
-
-        .node-desc {
-            font-size: 11px;
-            color: #888;
-            line-height: 1.5;
-            margin-bottom: 12px;
-        }
-
-        .node-features {
-            font-size: 10px;
-            color: #00ff9f;
-            line-height: 1.6;
-        }
-
-        .node-price {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            color: #ff6b00;
-        }
-
-        .node-capacity {
-            font-size: 10px;
-            color: #ff6b00;
-            margin-top: 8px;
-            font-weight: bold;
-        }
-
         /* BOOK BUTTON */
         .book-btn {
             width: 100%;
@@ -1165,19 +1095,16 @@
         }
 
         function nextStep(step) {
-            console.log('nextStep called with:', step);
-            console.log('bookingData:', bookingData);
-            
             // Validate current step
             if (step === 'node') {
-                const pickup = document.getElementById('pickup').value;
-                const destination = document.getElementById('destination').value;
-                
+                const pickup = document.getElementById('pickup').value.trim();
+                const destination = document.getElementById('destination').value.trim();
+
                 if (!pickup || !destination) {
                     alert('Please enter both pickup and destination locations.');
                     return;
                 }
-                
+
                 bookingData.pickup = pickup;
                 bookingData.destination = destination;
             }
@@ -1213,7 +1140,7 @@
             bookingData.nodePrice = nodePrices[node];
         }
 
-        // Add keyboard support for node options
+        // Add keyboard support for node options and modal backdrop close
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.node-option').forEach(option => {
                 option.addEventListener('keydown', function(e) {
@@ -1222,6 +1149,12 @@
                         this.click();
                     }
                 });
+            });
+
+            document.getElementById('booking-modal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeBooking();
+                }
             });
         });
 
