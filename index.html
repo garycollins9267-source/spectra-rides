@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NODE ZERO — Sovereign Node v1 Blueprint</title>
+<title>SPECTRA RIDES — Sovereign Node v1 Blueprint</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap');
   :root{
@@ -101,7 +101,7 @@
 <body>
 <header>
   <div class="logo-block">
-    <h1>RANE DYNAMICS</h1>
+    <h1>SPECTRA RIDES</h1>
     <div class="sub">SOVEREIGN NODE v1 — DOYLE, CA 96109 — APN 139-340-010 — LINEAR KERNEL LAYOUT</div>
   </div>
   <div class="hstats">
@@ -115,7 +115,7 @@
   <div class="floor-wrap">
     <div class="floor-meta">
       <span>FLOOR PLAN // GROUND LEVEL L1</span>
-      DOC-NZ-002 &nbsp;|&nbsp; REV D &nbsp;|&nbsp; FEB 2026 &nbsp;|&nbsp; SCALE 1"=14'
+      DOC-SR-002 &nbsp;|&nbsp; REV D &nbsp;|&nbsp; FEB 2026 &nbsp;|&nbsp; SCALE 1"=14'
     </div>
     <div class="level-toggle">
       <button class="level-btn active" onclick="showLevel('ground',this)">L1 — GROUND FLOOR</button>
@@ -1008,7 +1008,7 @@
       </div>
     </div>
     <div class="total-bar">
-      <div class="tl">NODE ZERO TOTAL BUDGET</div>
+      <div class="tl">SPECTRA RIDES TOTAL BUDGET</div>
       <div class="tv">$6.1M–$6.7M</div>
       <div class="tr">FULLY LOADED // LIGHTS-OUT CAPABLE</div>
     </div>
@@ -1025,7 +1025,7 @@ const Z={
   machineshop:{title:'ZONE D — HAAS HUB',color:'#ff6b00',desc:'Dedicated vibration isolation slab joint surrounds this zone. Kinetic energy from CNC operations cannot transfer to RDF-2 or Mini-Forge precision sensors. Haas VF-4SS tool changers operate within the 10ft ground floor clearance. PLC cabinet links to Oz orchestration layer via fiber. NFPA 484 COMPLIANCE: furnace and quench zones require Class D dry-suppression — water and Novec prohibited at metal fire sources.',equipment:['Haas VF-4SS VMC (4th Axis, ATC 24+1)','Haas ST-25Y CNC Lathe','Universal Gear Hobber','CNC Mandrel Tube Bender','Atmosphere Furnace (Carburizing)','Automated Quench Tank (Auto Lift)','Vibratory Tumbler','SMT Pick-and-Place','Reflow Oven','Robotic Wheel Lacing','PLC Cabinet → Oz Fiber Link','Vibration Isolation Slab Perimeter','Class D Dry Suppression — Furnace/Quench (NFPA 484)','Dedicated Exhaust + Wet Suppression — SMT/non-metal zones'],budget:'$1,650,000–$2,050,000'},
   energy:{title:'ZONE E — ENERGY + OZ NODE',color:'#ff2244',desc:'Nodes never go dark. 480V 3-phase bus duct runs overhead parallel to mezzanine loop powering all zones. Oz monitors grid state, battery level, and smart load shedding. Prioritizes RDF-2 and CNC over lights. 0.5-year payback on solar.',equipment:['75kW Rooftop Solar (188 panels)','225kWh Battery Bank','16-17 Tesla Powerwall 3','480V 3-Phase Main Panel','Overhead Bus Duct Distribution','Oz Grid State Monitor','Industrial HVAC + Exhaust','Clean Agent Suppression (Novec 1230)'],budget:'$180,000–$215,000'},
   shipping:{title:'ZONE F — SHIPPING + MEZZANINE STAIR',color:'rgba(160,100,255,0.9)',desc:'Far right per Linear Kernel spec. Output exits here. Direct stair access from the mezzanine Battle Pair command deck. Operator can walk from server room to shipping floor in 30 seconds. YELLOW-LIGHT INTERLOCK: mezzanine-to-shipping door triggers robot traffic pause — ground-level Digit and forklift units hold in buffer zone until door closes. Zero kinetic interference protocol.',equipment:['Roll-Up Shipping Door x2 (12ft clearance each)','Packing Station','Vehicle Staging Area','Direct Stair — Mezzanine Command Deck','Freight Scale','QC Inspection Station','Yellow-Light Interlock (door-triggered robot pause)','Human-Machine Exclusion Zone (permanent safety cage at stair base)'],budget:'(included in build-out)'},
-  assembly:{title:'ZONE G — VEHICLE ASSEMBLY',color:'rgba(200,150,50,0.85)',desc:'Early revenue wedge — core is the mesh, not vehicles. Zone G is a Complex Assembly Stress-Test for the Sovereign Protocol. The V4 Mustang and SP-series builds are not car projects — they are high-complexity, multi-material assembly sequences that prove the mesh can coordinate across Zones B, C, D simultaneously under real load. What ships is a vehicle. What is being tested is the entire Node Zero operating logic.',equipment:['Assembly Bay 1','Assembly Bay 2','Assembly Bay 3 (VTOL-configurable)','Parts Flow Conveyor Inlet','Overhead Crane Rough-In','Vehicle QC / Final Inspection'],budget:'(included in build-out)'},
+  assembly:{title:'ZONE G — VEHICLE ASSEMBLY',color:'rgba(200,150,50,0.85)',desc:'Early revenue wedge — core is the mesh, not vehicles. Zone G is a Complex Assembly Stress-Test for the Sovereign Protocol. The V4 Mustang and SP-series builds are not car projects — they are high-complexity, multi-material assembly sequences that prove the mesh can coordinate across Zones B, C, D simultaneously under real load. What ships is a vehicle. What is being tested is the entire Spectra Rides operating logic.',equipment:['Assembly Bay 1','Assembly Bay 2','Assembly Bay 3 (VTOL-configurable)','Parts Flow Conveyor Inlet','Overhead Crane Rough-In','Vehicle QC / Final Inspection'],budget:'(included in build-out)'},
   mezz:{title:'L2 — 360° MEZZANINE LOOP',color:'#ffd700',desc:'360° Omnit rail runs the full perimeter of the mezzanine. Carriers service any point on the production floor from above — top-down access to Mini-Forge pods without stopping production. Battle Pair command hub has direct sightlines to all zones. 8ft OSHA-compliant headroom on upper deck.',equipment:['360° Omnit Rail (Perimeter Loop)','Omnit Service Carriers','Battle Pair Command Hub (2x Operator Stations)','Aura Dashboard + Oz Monitor','NVIDIA Blackwell Server Room','Raised Floor + ESD Protection','Precision HVAC + Clean Agent Suppression (Novec 1230)','Fiber Conduit → Ground PLCs','Tool Storage + Fixturing Room','Loft / Overflow Expansion Space','Direct Stair → Shipping Zone F'],budget:'(included in construction)'},
   thermal:{title:'L3 — THERMAL ARCHITECTURE',color:'#ff9900',desc:'Integrated heat recovery system captures waste thermal energy from the Atmosphere Furnace (1,500°F+), Quench Tank, and NVIDIA Blackwell server racks. A closed-loop glycol system routes captured heat through the Utility Column spine to the HRV unit. Winter mode pipes heat to the Battle Pair command hub — up to 40% HVAC reduction. Summer mode reverses to active rejection through the North Wall exhaust stack.',equipment:['Thermal Hood — Atmo Furnace (1,500°F+ capture)','Thermal Hood — Quench Tank','Blackwell Rear-Door Heat Exchanger (RDHx)','Closed-Loop Glycol Distribution System','Utility Column (480V · Novec · Fiber · Glycol spine)','HRV Unit — Seasonal Mode Switch','North Wall Industrial Exhaust Stack (Summer)','Battle Pair Passive Heat Distribution (Winter)','Air Curtain — High-Velocity Dirty/Clean Barrier','Evaporative Cooling Mode (Summer → RDF-2 + SMT)'],budget:'Est. $85,000–$120,000 installed'},
   utilities:{title:'L4 — UTILITIES / SPINE',color:'#ff8800',desc:'All five utility systems route through the Utility Column spine at x=791 — a single vertical chase that eliminates redundant runs and cuts average cable/pipe lengths by ~40%. 480V 3-phase bus duct feeds every zone from the Zone E main panel. 120 PSI pneumatic manifold runs from the silos to RDF-2 and all 40 Mini-Forge pods. Single-mode fiber backbone connects the server room to every zone PLC under Oz orchestration. Novec 1230 suppression line branches to protected zones — Class D dry suppression only at metal fire sources. Grounding grid and ESD zones protect precision equipment.',equipment:['480V 3Φ Bus Duct — Zone E → all zones (60A–400A sub-panels)','120 PSI Pneumatic Manifold — Silos → RDF-2 + 40 Forge Pods','Single-Mode Fiber Backbone — Server Room → PLCs A–E (Oz)','Novec 1230 Main Line — Panel → Server Rm + RDF-2','CLASS D DRY SUPPRESSION ONLY — Haas Hub furnace/quench zones (NFPA 484)','Grounding Grid — Haas Isolation Slab (#4 bare copper, Ufer bond, 10ft grid)','ESD Conductive Flooring — RDF-2 / Zone B','E-Stop E1 — Zone A Entry','E-Stop E2 — B/C Junction','E-Stop E3 — Utility Column / Haas','E-Stop E4 — Zone F Exit (all systems halt)','Utility Column Spine — All 5 systems, single chase @ x=791'],budget:'Included in build-out · ~40% run-length savings vs distributed routing'},
