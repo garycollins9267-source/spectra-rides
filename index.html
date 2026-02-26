@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SPECTRA RIDES — Sovereign Node v1 Blueprint</title>
+<title>SPECTRA RIDES — Facility v1 Blueprint</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap');
   :root{
@@ -102,12 +102,12 @@
 <header>
   <div class="logo-block">
     <h1>SPECTRA RIDES</h1>
-    <div class="sub">SOVEREIGN NODE v1 — DOYLE, CA 96109 — APN 139-340-010 — LINEAR KERNEL LAYOUT</div>
+    <div class="sub">SPECTRA RIDES v1 — DOYLE, CA 96109 — APN 139-340-010 — LINEAR KERNEL LAYOUT</div>
   </div>
   <div class="hstats">
     <div class="stat"><div class="val">6,000</div><div class="lbl">INDUSTRIAL SQ FT</div></div>
     <div class="stat"><div class="val">22'</div><div class="lbl">EAVE HEIGHT</div></div>
-    <div class="stat"><div class="val">$6.1M</div><div class="lbl">NODE BUDGET</div></div>
+    <div class="stat"><div class="val">$6.1M</div><div class="lbl">SPECTRA RIDES BUDGET</div></div>
   </div>
 </header>
 
@@ -382,9 +382,9 @@
           <rect x="984" y="178" width="14" height="40" rx="1"/><rect x="1001" y="178" width="14" height="40" rx="1"/>
           <rect x="1018" y="178" width="14" height="40" rx="1"/><rect x="1035" y="178" width="14" height="40" rx="1"/>
         </g>
-        <!-- Oz node -->
+        <!-- Oz hub -->
         <rect x="911" y="234" width="144" height="65" fill="rgba(0,200,255,0.06)" stroke="#00c8ff" stroke-width="1" stroke-dasharray="5,3" rx="2"/>
-        <text x="916" y="254" fill="#00c8ff" font-family="'Share Tech Mono'" font-size="8">OZ NODE</text>
+        <text x="916" y="254" fill="#00c8ff" font-family="'Share Tech Mono'" font-size="8">OZ HUB</text>
         <text x="916" y="266" fill="rgba(0,200,255,0.5)" font-family="'Share Tech Mono'" font-size="7">ORCHESTRATION LAYER</text>
         <text x="916" y="278" fill="rgba(0,200,255,0.4)" font-family="'Share Tech Mono'" font-size="7">NVIDIA BLACKWELL</text>
         <circle cx="1037" cy="252" r="5" fill="#00c8ff" class="pulse" filter="url(#glow)"/>
@@ -496,7 +496,7 @@
           <!-- BATTLE PAIR COMMAND HUB (top-right) -->
           <rect x="490" y="90" width="240" height="130" fill="rgba(57,255,20,0.1)" stroke="#39ff14" stroke-width="2" rx="4"/>
           <text x="610" y="118" fill="#39ff14" font-family="'Barlow Condensed'" font-weight="900" font-size="16" text-anchor="middle" letter-spacing="2">BATTLE PAIR HUB</text>
-          <text x="610" y="135" fill="rgba(57,255,20,0.65)" font-family="'Share Tech Mono'" font-size="8" text-anchor="middle">NODE OPERATOR COMMAND CENTER</text>
+          <text x="610" y="135" fill="rgba(57,255,20,0.65)" font-family="'Share Tech Mono'" font-size="8" text-anchor="middle">SPECTRA RIDES COMMAND CENTER</text>
           <text x="610" y="148" fill="rgba(57,255,20,0.45)" font-family="'Share Tech Mono'" font-size="7" text-anchor="middle">AURA DASHBOARD · OZ MONITOR · COMMS</text>
           <text x="610" y="161" fill="rgba(57,255,20,0.45)" font-family="'Share Tech Mono'" font-size="7" text-anchor="middle">DUAL OPERATOR STATIONS · 8' HEADROOM</text>
 
@@ -975,7 +975,7 @@
       <div class="zi" onclick="sd('rdf2')"><div class="zd" style="background:#00c8ff;box-shadow:0 0 5px #00c8ff;"></div><div class="zn">B — RDF-2 OCTO-NEXUS</div><div class="zsf">~300 sf</div></div>
       <div class="zi" onclick="sd('miniforge')"><div class="zd" style="background:#39ff14;box-shadow:0 0 5px #39ff14;"></div><div class="zn">C — MINI-FORGE BANK</div><div class="zsf">~400 sf</div></div>
       <div class="zi" onclick="sd('machineshop')"><div class="zd" style="background:#ff6b00;box-shadow:0 0 5px #ff6b00;"></div><div class="zn">D — HAAS HUB</div><div class="zsf">~700 sf</div></div>
-      <div class="zi" onclick="sd('energy')"><div class="zd" style="background:#ff2244;box-shadow:0 0 5px #ff2244;"></div><div class="zn">E — ENERGY / OZ NODE</div><div class="zsf">~300 sf</div></div>
+      <div class="zi" onclick="sd('energy')"><div class="zd" style="background:#ff2244;box-shadow:0 0 5px #ff2244;"></div><div class="zn">E — ENERGY / OZ HUB</div><div class="zsf">~300 sf</div></div>
       <div class="zi" onclick="sd('shipping')"><div class="zd" style="background:rgba(160,100,255,0.9);box-shadow:0 0 5px rgba(160,100,255,0.8);"></div><div class="zn">F — SHIPPING / STAIRS</div><div class="zsf">~300 sf</div></div>
       <div class="zi" onclick="sd('assembly')"><div class="zd" style="background:rgba(200,150,50,0.8);"></div><div class="zn">G — VEHICLE ASSEMBLY</div><div class="zsf">~800 sf</div></div>
       <div class="zi" onclick="sd('mezz')"><div class="zd" style="background:transparent;border:1px dashed #ffd700;"></div><div class="zn">L2 — 360° MEZZ LOOP</div><div class="zsf">~2,400 sf</div></div>
@@ -1020,10 +1020,10 @@
 <script>
 const Z={
   intake:{title:'ZONE A — INTAKE',color:'#4488ff',desc:'Ground-level pads for aluminum pellet silos and ingot staging. Silos feed directly into the overhead 120 PSI pneumatic manifold. Receiving dock on the south wall. Material enters here and moves right through the Linear Kernel. NFPA 484 COMPLIANCE: combustible metal (aluminum dust, magnesium alloy) requires Class D dry-suppression only — water and clean-agent systems are prohibited in this zone.',equipment:['AL Pellet Silo 1 (500lb)','AL Pellet Silo 2 (500lb)','Ingot Staging Area','Receiving Dock','Pneumatic Manifold Feed Connections','Overhead Utility Tie-In','Class D Dry Suppression — NFPA 484 (NO water / NO Novec in this zone)','Dedicated Exhaust (Combustible Dust per zone)'],budget:'(included in build-out)'},
-  rdf2:{title:'ZONE B — RDF-2 OCTO-NEXUS',color:'#00c8ff',desc:'The Physical Compiler. 8-head synchronous gantry with 10ft operational envelope driven by NVIDIA Blackwell real-time physics simulation. Zero-latency Script switching. Material feeds from overhead pneumatic manifold. 3ft rail buffer above for Omnit service access.',equipment:['8-Head Synchronous Gantry','NVIDIA Blackwell EI Physics','12-16 kg/hr Throughput','CF-Nylon / Aluminum Composites','160 sq ft Machine Footprint','Overhead Pneumatic Feed','Fiber → OZ Node Link'],budget:'$4,000,000'},
+  rdf2:{title:'ZONE B — RDF-2 OCTO-NEXUS',color:'#00c8ff',desc:'The Physical Compiler. 8-head synchronous gantry with 10ft operational envelope driven by NVIDIA Blackwell real-time physics simulation. Zero-latency Script switching. Material feeds from overhead pneumatic manifold. 3ft rail buffer above for Omnit service access.',equipment:['8-Head Synchronous Gantry','NVIDIA Blackwell EI Physics','12-16 kg/hr Throughput','CF-Nylon / Aluminum Composites','160 sq ft Machine Footprint','Overhead Pneumatic Feed','Fiber → OZ Hub Link'],budget:'$4,000,000'},
   miniforge:{title:'ZONE C — MINI-FORGE BANK',color:'#39ff14',desc:'40-pod modular rack aligned directly under mezzanine overhang for top-down servicing by Omnit rail. Pneumatic central feed from overhead manifold. Digit EI sorting. Scale up: splice into the pipe and bolt a new pod to the rack in 48 hours.',equipment:['40 Print Pods (CoreXY) on 8040 Rack','500lb Pneumatic Pellet Tank','Overhead Solenoid Manifold (120 PSI)','Digit Humanoid Sorter','Stainless Belt Conveyor → Assembly','Centralized Collection Trough','Aura Vision Parts ID','Top-Down Omnit Service Access'],budget:'$280,000–$420,000'},
   machineshop:{title:'ZONE D — HAAS HUB',color:'#ff6b00',desc:'Dedicated vibration isolation slab joint surrounds this zone. Kinetic energy from CNC operations cannot transfer to RDF-2 or Mini-Forge precision sensors. Haas VF-4SS tool changers operate within the 10ft ground floor clearance. PLC cabinet links to Oz orchestration layer via fiber. NFPA 484 COMPLIANCE: furnace and quench zones require Class D dry-suppression — water and Novec prohibited at metal fire sources.',equipment:['Haas VF-4SS VMC (4th Axis, ATC 24+1)','Haas ST-25Y CNC Lathe','Universal Gear Hobber','CNC Mandrel Tube Bender','Atmosphere Furnace (Carburizing)','Automated Quench Tank (Auto Lift)','Vibratory Tumbler','SMT Pick-and-Place','Reflow Oven','Robotic Wheel Lacing','PLC Cabinet → Oz Fiber Link','Vibration Isolation Slab Perimeter','Class D Dry Suppression — Furnace/Quench (NFPA 484)','Dedicated Exhaust + Wet Suppression — SMT/non-metal zones'],budget:'$1,650,000–$2,050,000'},
-  energy:{title:'ZONE E — ENERGY + OZ NODE',color:'#ff2244',desc:'Nodes never go dark. 480V 3-phase bus duct runs overhead parallel to mezzanine loop powering all zones. Oz monitors grid state, battery level, and smart load shedding. Prioritizes RDF-2 and CNC over lights. 0.5-year payback on solar.',equipment:['75kW Rooftop Solar (188 panels)','225kWh Battery Bank','16-17 Tesla Powerwall 3','480V 3-Phase Main Panel','Overhead Bus Duct Distribution','Oz Grid State Monitor','Industrial HVAC + Exhaust','Clean Agent Suppression (Novec 1230)'],budget:'$180,000–$215,000'},
+  energy:{title:'ZONE E — ENERGY + OZ HUB',color:'#ff2244',desc:'Systems never go dark. 480V 3-phase bus duct runs overhead parallel to mezzanine loop powering all zones. Oz monitors grid state, battery level, and smart load shedding. Prioritizes RDF-2 and CNC over lights. 0.5-year payback on solar.',equipment:['75kW Rooftop Solar (188 panels)','225kWh Battery Bank','16-17 Tesla Powerwall 3','480V 3-Phase Main Panel','Overhead Bus Duct Distribution','Oz Grid State Monitor','Industrial HVAC + Exhaust','Clean Agent Suppression (Novec 1230)'],budget:'$180,000–$215,000'},
   shipping:{title:'ZONE F — SHIPPING + MEZZANINE STAIR',color:'rgba(160,100,255,0.9)',desc:'Far right per Linear Kernel spec. Output exits here. Direct stair access from the mezzanine Battle Pair command deck. Operator can walk from server room to shipping floor in 30 seconds. YELLOW-LIGHT INTERLOCK: mezzanine-to-shipping door triggers robot traffic pause — ground-level Digit and forklift units hold in buffer zone until door closes. Zero kinetic interference protocol.',equipment:['Roll-Up Shipping Door x2 (12ft clearance each)','Packing Station','Vehicle Staging Area','Direct Stair — Mezzanine Command Deck','Freight Scale','QC Inspection Station','Yellow-Light Interlock (door-triggered robot pause)','Human-Machine Exclusion Zone (permanent safety cage at stair base)'],budget:'(included in build-out)'},
   assembly:{title:'ZONE G — VEHICLE ASSEMBLY',color:'rgba(200,150,50,0.85)',desc:'Early revenue wedge — core is the mesh, not vehicles. Zone G is a Complex Assembly Stress-Test for the Sovereign Protocol. The V4 Mustang and SP-series builds are not car projects — they are high-complexity, multi-material assembly sequences that prove the mesh can coordinate across Zones B, C, D simultaneously under real load. What ships is a vehicle. What is being tested is the entire Spectra Rides operating logic.',equipment:['Assembly Bay 1','Assembly Bay 2','Assembly Bay 3 (VTOL-configurable)','Parts Flow Conveyor Inlet','Overhead Crane Rough-In','Vehicle QC / Final Inspection'],budget:'(included in build-out)'},
   mezz:{title:'L2 — 360° MEZZANINE LOOP',color:'#ffd700',desc:'360° Omnit rail runs the full perimeter of the mezzanine. Carriers service any point on the production floor from above — top-down access to Mini-Forge pods without stopping production. Battle Pair command hub has direct sightlines to all zones. 8ft OSHA-compliant headroom on upper deck.',equipment:['360° Omnit Rail (Perimeter Loop)','Omnit Service Carriers','Battle Pair Command Hub (2x Operator Stations)','Aura Dashboard + Oz Monitor','NVIDIA Blackwell Server Room','Raised Floor + ESD Protection','Precision HVAC + Clean Agent Suppression (Novec 1230)','Fiber Conduit → Ground PLCs','Tool Storage + Fixturing Room','Loft / Overflow Expansion Space','Direct Stair → Shipping Zone F'],budget:'(included in construction)'},
